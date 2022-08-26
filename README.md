@@ -1,64 +1,50 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+![Logo]( https://linkuin.net/public/assets/users/img/Logo.png )
 
-## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+LinkuinSlave 
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Linkuinslave is a link promotion site where link website links were promoted.
+please follow above steps.
 
-## Learning Laravel
+step 1: Go to github (https://github.com/Hatseflatsh/linkuinslave) and clone http url ( https://prnt.sc/B9KAkkPMM_2R )
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+step 2: Open git bash or windows CMD or terminal and follow as below steps.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Step 3:  clone the repositery 
 
-## Laravel Sponsors
+		- git clone <git url>[ https://prnt.sc/wjRTjzUoQYVP ]
+step 4: enter in project folder - https://prnt.sc/Ayuwo1MEy-Jt
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+step 5: run below command to download dependencies of the packages ( https://prnt.sc/sco6l-ZlGNbG )
 
-### Premium Partners
+		- composer install
+step 6: Now, generate the .env file and key for it using the below commands ( https://stackoverflow.com/a/29915688 )
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+		- cp .env.example .env
+		- php artisan key:generate
+step 6:  Make the following changes in the .env file.
 
-## Contributing
+        APP_ENV=local
+        APP_KEY=base64:NyYHhAy3A5eSq0AKOO5gp7KCT+XAx0UZlXYMCI8VkMU=
+        APP_DEBUG=true
+        APP_URL=<your url> (ex: https://linkuinslave.nl/)
+        ASSET_URL=<your asset url>(ex: https://linkuinslave.nl/public)
+        API_URL=https://linkuin.net/api/
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+        MAIL_MAILER=smtp
+        MAIL_HOST=smtp.gmail.com
+        MAIL_PORT=465
+        MAIL_USERNAME="devsvpt.narola@gmail.com"
+        MAIL_PASSWORD="lbtbyqflatmhqmzp"
+        MAIL_ENCRYPTION=ssl
+        MAIL_FROM_ADDRESS="no-reply@linksbuilding.com"
+        MAIL_FROM_NAME="${APP_NAME}"
 
-## Code of Conduct
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-## Security Vulnerabilities
+		Note : Here in .env file You only have to change APP_URL, APP_KEY, ASSET_URL, MAIL_MAILER, MAIL_HOST, MAIL_PORT, MAIL_USERNAME, MAIL_PASSWORD, MAIL_ENCRYPTION. 
+		please refer as above example for env file changes
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
